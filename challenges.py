@@ -30,6 +30,11 @@ def formView():
 @app.route('/result', methods = ['GET', 'POST'])
 def resultView():
     # Make an API request to Recipe API for the ingredient entered in the form and display the recipe results 
+    #Step 1 : Receive the ingredient from the form if request type is POST
+    #Step 2 : Create paramaters JSON with the ingredient received in step 1 in the form required by http://www.recipepuppy.com/about/api/
+    #Step 3 : Make an API request to Recipe API and parameters in Step 2 
+    #Step 4 : Parse the response from API request in JSON 
+    #Step 5 : Display the response in browser (remember : HTML takes only strings)
     return ""
 
 
